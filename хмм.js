@@ -36,9 +36,9 @@ let createPost = () => {
   data.map((x, y) => {
     return (posts.innerHTML += `
     <div id=${y}>
-        <span class="fw-bold">${x.text}</span>
-        <span class="fw-bold">${x.contact}</span>
-        <span class="small text-secondary">${x.date}</span>
+        <span>${x.text}</span>
+        <span class="bold">${x.contact}</span>
+        <span>${x.date}</span>
         <p>${x.description}</p>
 
         <span class="options">

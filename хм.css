@@ -32,7 +32,10 @@ body {
 
 }
 
-
+.bold {
+  font-weight: bold;
+  color: teal;
+}
 
 .mb-3{
   font: 60px/1.2 "Summer Bold";
@@ -42,25 +45,23 @@ body {
 
 .container {
   display: flex;
-  gap: 300px;
+  gap: 100px;
   background-color: rgba(209, 223, 227, 1);
-  width: 1500px;
-  height: 900px;
+  width: 1000px;
+  height: 800px;
   border: 5px solid rgba(232, 142, 185, 1);
   border-radius: 8px;
   padding: 15px;
   overflow-y: scroll;
   justify-content: center;
-  font: 35px/1.2 "Summer Bold";
+  font: 28px/1.2 "Summer Bold";
 
 }
 .container::-webkit-scrollbar {
   width: 0 !important;
 }
 
-.formbody {
-  font: 35px/1.2 "Summer Bold";
-}
+
 
 .form-control{
   font: 30px/1.2 "Summer Bold";
@@ -101,12 +102,9 @@ i {
 .left {
 
 
-  width: 400px;
-
-  border-radius: 6px;
-  padding: 10px;
+  width: 600px;
+  border-right: 5px solid rgba(232, 142, 185, 1);
   display: grid;
-  gap: 1px;
   justify-content: center;
   align-items: center;
 }
@@ -118,6 +116,9 @@ i {
 
 .right {
   width: 600px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-primary {
@@ -133,28 +134,38 @@ i {
 
 
 /*--адаптируем под разные дисплеи*/
-/* For mobile phones: */
+
 @media screen and (min-width:768px) {
 
-  .app {
+  .container {
     width: 100%;
     flex-basis: 100%;
-
   }
 
 }
 
-/* For tablets: */
+
 @media screen and (min-width: 992px) {
   .container{
     width:980px;
-    flex-basis:980px;
+
+
   }
 }
-/* For display: */
+/*--Для ноута*/
+@media screen and (max-height: 800px) {
+  .container{
+    height:600px;
+
+
+  }
+}
+
+/*--Нормальный полноразмерный дисплей*/
 @media screen and (min-width:1200px) {
   .container{
-    width:1000px;
+    width: 1000px;
+
   }
 
 }

@@ -45,7 +45,7 @@ body {
 
 .container {
   display: flex;
-  gap: 100px;
+
   background-color: rgba(209, 223, 227, 1);
   width: 1000px;
   height: 800px;
@@ -75,7 +75,7 @@ body {
 }
 
 #posts div {
-
+width:400px;
   border: 3px solid #abcea1;
   background-color: rgba(171, 206, 161, 0.35);
   border-radius: 6px;
@@ -102,10 +102,10 @@ i {
 .left {
 
 
-  width: 600px;
+  width: 500px;
   border-right: 5px solid rgba(232, 142, 185, 1);
   display: grid;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 }
 
@@ -115,8 +115,9 @@ i {
 }
 
 .right {
-  width: 600px;
+  width: 800px;
   display: grid;
+  text-align:center;
   justify-content: center;
   align-items: center;
 }
@@ -144,7 +145,7 @@ i {
 
 }
 
-
+/*--Нормальный полноразмерный дисплей*/
 @media screen and (min-width: 992px) {
   .container{
     width:980px;
